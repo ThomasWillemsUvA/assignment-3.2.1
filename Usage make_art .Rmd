@@ -1,0 +1,37 @@
+---
+title: "Assignment 3.2.2"
+author: "Thomas Willems"
+date: "28-1-2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Random aRt production
+
+This make_art() function can be used when one wishes to create art, without being creative.
+The function takes the arguments seed1 to set a seed.
+nr_img takes the amount of images one wants to create.
+color1 takes the color of the subject.
+background_color1 takes the background color.
+The function automatically creates a new folder named aRt
+
+```{r include=FALSE}
+devtools::install_github("cutterkom/generativeart")
+install.packages("ambient")
+library(generativeart)
+library(ambient)
+library(dplyr)
+```
+
+## Example usage
+
+An example in usage
+
+```{r pressure, echo=FALSE}
+make_art (1234, 1, "#E0542E", "#1a3657")
+```
+
+
